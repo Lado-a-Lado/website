@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="icon" href="%sveltekit.assets%/favicon.png"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <style>
+            body {
+                height: 100vh;
+                margin: 0;
+            }
+
+            @font-face {
+                font-family: __geistSansFont_8289af;
+                src: url("https://vercel.com/_next/static/media/d82a8a076d0105b5.p.woff2") format("woff2");
+                font-display: swap;
+            }
+
+            * {
+                font-family: "__geistSansFont_8289af", sans-serif;
+            }
+        </style>
+        %sveltekit.head%
+    </head>
+    <body data-sveltekit-preload-data="hover">
+        <div style="display: contents">%sveltekit.body%</div>
+    </body>
+</html>
