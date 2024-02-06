@@ -1,0 +1,27 @@
+body {
+  height: 100vh;
+  margin: 0;
+  scrollbar-width: thin;
+  background-color: #fcf9e9;
+}
+
+:root {
+  --theme-yellow: #FFE57D;
+  --theme-red: #BD4747;
+  --theme-brown: #6D2E46;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300;400;500;600;700&display=swap');
+
+@font-face {
+  font-family: "Delícia Frutos";
+  src: url("Fruits Delight.otf");
+}
+
+h1 {
+  font-family: "Delícia Frutos", fantasy;
+}
+
+h2 {
+  font-family: "Overpass Mono", monospace;
+}

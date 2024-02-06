@@ -1,5 +1,9 @@
 <main>
-    <h1 id=title>Lado a Lado</h1>
+    <div class="subtitle-over">
+        <span class="main">CONFERÊNCIA</span>
+        <span>&bullet; 3 MARÇO 2024, LISBOA</span>
+    </div>
+    <h1>Viver para amar</h1>
 </main>
 
 <p>Olá, mãe!</p>
@@ -10,15 +14,29 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    gap: 1em;
     height: 100%;
-    background-color: #FFE681;
-    background-image: radial-gradient(at top right, #6D2E45, transparent 10%), radial-gradient(at bottom left, #6D2E45, transparent 10%);
+    background-image: url("/Gradient.png");
+    background-size: cover;
+
+    h1 {
+      color: black;
+      font-size: 3.5em;
+      margin:0;
+    }
+
+    .subtitle-over {
+      color:var(--theme-red);
+      display: flex;
+      gap: .50rem;
+      align-items: center;
+      font-family: "Overpass Mono",monospace;
+      font-weight: bold;
+
+      .main{
+        font-size: 1.6em;
+      }
+    }
   }
 
-  #title {
-    font-face: 'Open Sans', sans-serif;
-    font-weight: bold;
-    color: #BD4747;
-  }
 </style>
