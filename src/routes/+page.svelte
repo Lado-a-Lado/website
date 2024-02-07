@@ -1,16 +1,15 @@
-<main>
+<section class="initial">
     <div class="subtitle-over">
         <span class="main">CONFERÊNCIA</span>
         <span>&bullet; 3 MARÇO 2024, LISBOA</span>
     </div>
     <h1>Viver para amar</h1>
-</main>
+</section>
 
 <p>Olá, mãe!</p>
 
 <style lang="scss">
-
-  main {
+  .initial {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -38,5 +37,4 @@
       }
     }
   }
-
 </style>

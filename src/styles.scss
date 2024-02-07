@@ -1,3 +1,6 @@
+@import "@fontsource-variable/overpass-mono";
+@import "@fontsource-variable/rubik";
+
 body {
   height: 100vh;
   margin: 0;
@@ -11,15 +14,14 @@ body {
   --theme-brown: #6D2E46;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300;400;500;600;700&display=swap');
-
 @font-face {
-  font-family: "Delícia Frutos";
+  font-family: "Fruits Delight";
   src: url("Fruits Delight.otf");
+  font-display: swap;
 }
 
 h1 {
-  font-family: "Delícia Frutos", fantasy;
+  font-family: "Fruits Delight", "Bush Script MT", fantasy;
 }
 
 h2 {
