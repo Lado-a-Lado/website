@@ -21,18 +21,18 @@
     h1 {
       color: black;
       font-size: 3.5em;
-      margin:0;
+      margin: 0;
     }
 
     .subtitle-over {
-      color:var(--theme-red);
+      color: var(--theme-red);
       display: flex;
       gap: .50rem;
       align-items: center;
-      font-family: "Overpass Mono",monospace;
+      font-family: "Overpass Mono", monospace;
       font-weight: bold;
 
-      .main{
+      .main {
         font-size: 1.6em;
       }
     }
