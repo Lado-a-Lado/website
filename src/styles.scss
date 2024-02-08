@@ -13,17 +13,3 @@ body {
   --theme-red: #BD4747;
   --theme-brown: #6D2E46;
 }
-
-@font-face {
-  font-family: "FruitsDelight";
-  src: url("FruitsDelight.otf");
-  font-display: swap;
-}
-
-h1 {
-  font-family: "FruitsDelight", "Bush Script MT", fantasy;
-}
-
-h2 {
-  font-family: "Overpass Mono", monospace;
-}

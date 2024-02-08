@@ -15,13 +15,14 @@
     justify-content: center;
     gap: 1em;
     height: 100%;
-    background-image: url("/Gradient.png");
+    background-image: url("/img/Gradient.png");
     background-size: cover;
 
     h1 {
       color: black;
       font-size: 3.5em;
       margin: 0;
+      font-family: "FruitsDelight", "Bush Script MT", fantasy;
     }
 
     .subtitle-over {
