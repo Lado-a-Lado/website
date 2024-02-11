@@ -1,26 +1,25 @@
-<script>
-  import {currentIsLanding} from "$lib";
-</script>
+<header>
+    <a class="logo" href="/"><img src="/img/logo-name.svg" alt="Lado a Lado"/></a>
 
-<nav>
-    <a class="logo" href><img src="/img/logo-name.svg" alt="Lado a Lado"/></a>
-
-    <div class="links" class:be-at-bottom={$currentIsLanding}>
-        <a href="/quem-somos">Quem somos</a>
-        <a href="/blogue">Blogue</a>
-    </div>
-</nav>
+    <nav>
+        <ul class="links">
+            <li><a href="/quem-somos"><span>Quem somos</span></a></li>
+            <li><a href="/blogue"><span>Blogue</span></a></li>
+        </ul>
+    </nav>
+</header>
 
 <style lang="scss">
-  nav {
+  header {
     position: fixed;
     width: 100vw;
+    display: flex;
   }
 
   .logo {
     display: block;
     width: 210px;
-    margin: 30px;
+    margin: 50px;
 
     img {
       width: 100%;
@@ -28,15 +27,12 @@
   }
 
   .links {
+    list-style: none;
     display: flex;
     gap: 20px;
-    position: absolute;
     top: 33%;
     left: 50%;
     translate: -50%;
     font-size: 1.2em;
-
-    &.be-at-bottom {
-    }
   }
 </style>
