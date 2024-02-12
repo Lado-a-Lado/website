@@ -3,8 +3,8 @@
 
     <nav>
         <ul class="links">
-            <li><a href="/quem-somos"><span>Quem somos</span></a></li>
-            <li><a href="/blogue"><span>Blogue</span></a></li>
+            <!--            <li><a href="/quem-somos"><span>Quem somos</span></a></li>-->
+            <!--            <li><a href="/blogue"><span>Blogue</span></a></li>-->
         </ul>
     </nav>
 </header>

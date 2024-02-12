@@ -1,11 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @import "@fontsource-variable/overpass-mono";
 @import "@fontsource-variable/rubik";
 
+@font-face {
+  font-family: "FruitsDelight";
+  src: url("/fonts/FruitsDelight.otf");
+  font-display: swap;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  height: 100vh;
-  margin: 0;
   scrollbar-width: thin;
   background-color: #fcf9e9;
+  overflow-x: hidden;
 }
 
 :root {
@@ -13,3 +25,20 @@ body {
   --theme-red: #BD4747;
   --theme-brown: #6d2e46;
 }
+
+.color-red {
+  color: var(--theme-red);
+}
+
+.mono {
+  font-family: "Overpass Mono", monospace;
+}
+
+.rubik {
+  font-family: "Rubik", sans-serif;
+}
+
+.fruits-delight {
+  font-family: "FruitsDelight", "Bush Script MT", fantasy;
+}
+
