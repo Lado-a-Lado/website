@@ -8,7 +8,7 @@
         <h2 class="rubik">Um evento sobre</h2>
     </div>
 
-    <button class="mono absolute left-[10%] bottom-[22%] text-xl bg-none font-semibold border-solid border-black border-4 py-5 px-7 rounded-[40px] transition-all">
+    <button class="sign-up mono absolute left-[10%] bottom-[22%] text-xl bg-none font-semibold py-3 px-6 rounded-[40px]">
         INSCREVE-TE AQUI!
     </button>
 
@@ -38,6 +38,21 @@
 
   #landing-section {
     background-image: url("/img/Gradient.jpg");
+
+    button.sign-up {
+      transition: all cubic-bezier(0.4, 0, 0.2, 1) 125ms;
+      color: var(--theme-red);
+      border: 4px solid var(--theme-red);
+
+      &:hover {
+        color: var(--theme-yellow);
+        background-color: var(--theme-red);
+      }
+
+      &:active {
+        box-shadow: inset 0 0 20px -5px black;
+      }
+    }
 
     img.huge-logo {
     }
