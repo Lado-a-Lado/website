@@ -18,7 +18,7 @@
 
   .logo {
     display: block;
-    width: 210px;
+    width: 17%;
     margin: 50px;
 
     img {
