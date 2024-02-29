@@ -1,5 +1,21 @@
-<header>
-    <a class="logo" href="/"><img src="/img/logo-name.svg" alt="Lado a Lado"/></a>
+<script lang="ts">
+  import {writable} from "svelte/store";
+  import {onMount} from "svelte";
+
+  const scrollHeight = writable(0);
+
+  const updateScrollHeight = () => {
+    const maxHeight = document.body.scrollHeight - window.innerHeight;
+    scrollHeight.set((window.scrollY * 100) / maxHeight);
+  };
+
+  onMount(() => updateScrollHeight());
+</script>
+
+<svelte:window on:scroll={updateScrollHeight}/>
+
+<header class="fixed z-10 w-lvw flex" style="background-color: rgba(255,229,125,{$scrollHeight/30})">
+    <a class="logo block m-7 w-36" href="/"><img class="w-full" src="/img/logo-name.svg" alt="Lado a Lado"/></a>
 
     <nav>
         <ul class="links">
@@ -10,22 +26,6 @@
 </header>
 
 <style lang="scss">
-  header {
-    position: fixed;
-    width: 100vw;
-    display: flex;
-  }
-
-  .logo {
-    display: block;
-    width: 17%;
-    margin: 50px;
-
-    img {
-      width: 100%;
-    }
-  }
-
   .links {
     list-style: none;
     display: flex;

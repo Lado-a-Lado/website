@@ -1,10 +1,19 @@
-<section id=landing-section class="h-dvh flex flex-col justify-center gap-4 bg-cover">
-    <div class="absolute top-[38%] left-[10%] max-w-[50%]">
+<div class="header-buttons">
+<!--    <div class="mono font-semibold absolute left-1/2 bottom-[10%] -translate-x-1/2 flex gap-14 text-lg">-->
+<!--        <a href="#sobre">Sobre</a>-->
+<!--        <a href="#oradores">Oradores</a>-->
+<!--        <a href="#horário">Horário</a>-->
+<!--        <a href="#reserva">Reserva</a>-->
+<!--    </div>-->
+</div>
+
+<section id=landing-section class="h-svh flex flex-col justify-center gap-4 bg-cover">
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 w-[90%]">
         <div class="color-red mono flex gap-2 items-center font-bold">
-            <span class="text-3xl">CONFERÊNCIA</span>
-            <span>&bullet; 3 MARÇO 2024, LISBOA</span>
+            <span class="text-lg">CONFERÊNCIA</span>
+            <span class="text-sm">&bullet; 3 MARÇO 2024, LISBOA</span>
         </div>
-        <h1 class="fruits-delight text-black text-6xl my-4">Viver para amar</h1>
+        <h1 class="fruits-delight text-black text-[40px] my-4">Viver para amar</h1>
         <h2 class="rubik">Um evento sobre</h2>
     </div>
 
@@ -12,18 +21,11 @@
         INSCREVE-TE AQUI!
     </button>
 
-    <img class="huge-logo absolute top-0 right-[-4%] w-[71%] max-h-[80%]" src="/img/logo-hands.svg"
-         alt="Contorno de mãos dadas"/>
-
-    <div class="mono font-semibold absolute left-1/2 bottom-[10%] -translate-x-1/2 flex gap-14 text-lg">
-        <a href="#sobre">Sobre</a>
-        <a href="#oradores">Oradores</a>
-        <a href="#horário">Horário</a>
-        <a href="#reserva">Reserva</a>
-    </div>
+    <img class="huge-logo absolute top-20 left-16 w-full" src="/img/logo-hands.svg"
+         alt="Desenho de mãos dadas"/>
 </section>
 
-<section id="sobre" class="h-dvh flex flex-col items-center justify-evenly">
+<section id="sobre" class="h-svh flex flex-col items-center justify-evenly">
     <h1 class="color-red mono">SOBRE</h1>
     <h2 class="fruits-delight">Em que consiste?</h2>
     <div class="flex items-center justify-evenly gap-16 w-11/12">
@@ -49,7 +51,7 @@
     <button class="sign-up">INSCRIÇÃO</button>
 </section>
 
-<section id="oradores" class="h-dvh">
+<section id="oradores" class="h-svh">
     <p>Oradores</p>
 </section>
 
