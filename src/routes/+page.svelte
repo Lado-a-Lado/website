@@ -27,13 +27,13 @@
 
 <section id="sobre" class="h-svh flex flex-col items-center justify-evenly">
     <h1 class="color-red mono">SOBRE</h1>
-    <h2 class="fruits-delight">Em que consiste?</h2>
-    <div class="flex items-center justify-evenly gap-16 w-11/12">
-        <div class="w-[35vw]">
+    <h2 class="fruits-delight text-3xl md:text-4xl xl:text-5xl">Em que consiste?</h2>
+    <div class="flex flex-col md:flex-row items-center justify-evenly gap-16 w-11/12">
+        <div class="w-full md:w-9/12">
             <div class="bg-black aspect-video"><span class="text-white w-full h-full items-center flex justify-center">
                 Video</span></div>
         </div>
-        <div class="w-[35vw]">
+        <div class="w-full md:w-9/12">
             <p>Lorem ipsum dolor sit amet consectetur. Iaculis amet enim pellentesque mattis consequat adipiscing vel
                 odio. Pretium tortor arcu eu lorem sagittis vitae laoreet. Aliquam tempor nibh tellus mauris rutrum sit
                 suspendisse et cras. Integer interdum posuere id commodo morbi varius sapien mi. Fermentum iaculis non
@@ -42,13 +42,12 @@
                 auctor orci non. Commodo sit vestibulum gravida euismod tincidunt proin. </p>
         </div>
     </div>
+    <button class="sign-up block md:hidden self-start ml-5">INSCRIÇÃO</button>
 </section>
 
 <section class="bg-[var(--theme-yellow)] flex justify-center items-center p-12">
-    <div class="rubik">
-        E viveram lado a lado para sempre
-    </div>
-    <button class="sign-up">INSCRIÇÃO</button>
+    <img class="w-full scale-110 md:w-1/2 md:mr-44 md:scale-100" src="/img/lado-a-lado-frase.svg" alt="E viveram lado a lado para sempre"/>
+    <button class="sign-up hidden md:block">INSCRIÇÃO</button>
 </section>
 
 <section id="oradores" class="h-svh">
