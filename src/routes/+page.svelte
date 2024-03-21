@@ -1,27 +1,28 @@
 <div class="header-buttons">
-<!--    <div class="mono font-semibold absolute left-1/2 bottom-[10%] -translate-x-1/2 flex gap-14 text-lg">-->
-<!--        <a href="#sobre">Sobre</a>-->
-<!--        <a href="#oradores">Oradores</a>-->
-<!--        <a href="#horário">Horário</a>-->
-<!--        <a href="#reserva">Reserva</a>-->
-<!--    </div>-->
+    <!--    <div class="mono font-semibold absolute left-1/2 bottom-[10%] -translate-x-1/2 flex gap-14 text-lg">-->
+    <!--        <a href="#sobre">Sobre</a>-->
+    <!--        <a href="#oradores">Oradores</a>-->
+    <!--        <a href="#horário">Horário</a>-->
+    <!--        <a href="#reserva">Reserva</a>-->
+    <!--    </div>-->
 </div>
 
-<section id=landing-section class="relative overflow-hidden h-svh max-h-[700px] sm:max-h-[900px] md:max-h-[1000px] min-h-[750px] flex flex-col justify-center gap-4 bg-cover">
-    <div class="absolute top-[55%] sm:top-2/3 left-1/2 -translate-x-1/2 w-80">
+<section id=landing-section class="relative overflow-hidden h-svh max-h-[700px] sm:max-h-[900px] md:max-h-[1000px] min-h-[750px]
+ flex flex-col justify-center gap-4 bg-cover">
+    <div class="absolute top-[55%] sm:top-2/3 md:top-[60%] md:-translate-y-1/2 left-1/2 -translate-x-1/2 md:left-1/3 w-80 md:w-[600px]">
         <div class="color-red mono flex gap-2 items-center font-bold">
-            <span class="text-lg">CONFERÊNCIA</span>
-            <span class="text-sm">&bullet; 3 MARÇO 2024, LISBOA</span>
+            <span class="text-lg md:text-3xl">CONFERÊNCIA</span>
+            <span class="text-sm md:text-2xl">&bullet; 3 MARÇO 2024, LISBOA</span>
         </div>
-        <h1 class="fruits-delight text-black text-[40px] my-2">Viver para amar</h1>
-        <h2 class="rubik">Um evento sobre</h2>
-        <button class="sign-up my-16">
+        <h1 class="fruits-delight text-black my-2 md:my-6 text-[45px] md:text-7xl">Viver para amar</h1>
+        <h2 class="rubik md:text-xl">Um evento sobre</h2>
+        <button class="sign-up my-16 text-xl md:text-2xl">
             INSCREVE-TE AQUI!
         </button>
     </div>
 
-    <img class="huge-logo absolute top-20 -right-[25%] max-w-none w-[120%] max-h-[45%] md:w-full" src="/img/logo-hands.svg"
-         alt="Desenho de mãos dadas"/>
+    <img class="huge-logo absolute top-20 md:top-0 -right-[25%] w-[120%] md:w-full max-w-none max-h-[40%] md:max-h-[80%]"
+         src="/img/logo-hands.svg" alt="Desenho de mãos dadas"/>
 </section>
 
 <section id="sobre" class="h-svh min-h-96 md:h-auto md:gap-4 md:py-12 flex flex-col items-center justify-evenly">
@@ -45,7 +46,8 @@
 </section>
 
 <section class="bg-[var(--theme-yellow)] flex justify-center items-center p-12">
-    <img class="w-full scale-110 md:w-1/2 md:mr-44 md:scale-100" src="/img/lado-a-lado-frase.svg" alt="E viveram lado a lado para sempre"/>
+    <img class="w-full scale-110 md:w-1/2 md:mr-44 md:scale-100" src="/img/lado-a-lado-frase.svg"
+         alt="E viveram lado a lado para sempre"/>
     <button class="sign-up hidden md:block">INSCRIÇÃO</button>
 </section>
 
@@ -63,7 +65,7 @@
   }
 
   button.sign-up {
-    @apply text-xl bg-none font-semibold py-3 px-6 rounded-full;
+    @apply bg-none font-semibold py-3 px-6 rounded-full;
     transition: all cubic-bezier(0.4, 0, 0.2, 1) 125ms;
     color: var(--theme-red);
     border: 3px solid var(--theme-red);
