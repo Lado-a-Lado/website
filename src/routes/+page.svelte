@@ -7,28 +7,27 @@
 <!--    </div>-->
 </div>
 
-<section id=landing-section class="h-svh flex flex-col justify-center gap-4 bg-cover">
-    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 w-[90%]">
+<section id=landing-section class="relative overflow-hidden h-svh max-h-[700px] sm:max-h-[900px] md:max-h-[1000px] min-h-[750px] flex flex-col justify-center gap-4 bg-cover">
+    <div class="absolute top-[55%] sm:top-2/3 left-1/2 -translate-x-1/2 w-80">
         <div class="color-red mono flex gap-2 items-center font-bold">
             <span class="text-lg">CONFERÊNCIA</span>
             <span class="text-sm">&bullet; 3 MARÇO 2024, LISBOA</span>
         </div>
-        <h1 class="fruits-delight text-black text-[40px] my-4">Viver para amar</h1>
+        <h1 class="fruits-delight text-black text-[40px] my-2">Viver para amar</h1>
         <h2 class="rubik">Um evento sobre</h2>
+        <button class="sign-up my-16">
+            INSCREVE-TE AQUI!
+        </button>
     </div>
 
-    <button class="sign-up absolute left-[10%] bottom-[22%]">
-        INSCREVE-TE AQUI!
-    </button>
-
-    <img class="huge-logo absolute top-20 left-16 w-full" src="/img/logo-hands.svg"
+    <img class="huge-logo absolute top-20 -right-[25%] max-w-none w-[120%] max-h-[45%] md:w-full" src="/img/logo-hands.svg"
          alt="Desenho de mãos dadas"/>
 </section>
 
-<section id="sobre" class="h-svh flex flex-col items-center justify-evenly">
+<section id="sobre" class="h-svh min-h-96 md:h-auto md:gap-4 md:py-12 flex flex-col items-center justify-evenly">
     <h1 class="color-red mono">SOBRE</h1>
     <h2 class="fruits-delight text-3xl md:text-4xl xl:text-5xl">Em que consiste?</h2>
-    <div class="flex flex-col md:flex-row items-center justify-evenly gap-16 w-11/12">
+    <div class="md:pt-6 flex flex-col md:flex-row items-center justify-evenly gap-16 w-11/12">
         <div class="w-full md:w-9/12">
             <div class="bg-black aspect-video"><span class="text-white w-full h-full items-center flex justify-center">
                 Video</span></div>
@@ -57,6 +56,7 @@
 <style lang="scss">
   #landing-section {
     background-image: url("/img/Gradient.jpg");
+    background-color: var(--theme-yellow);
 
     img.huge-logo {
     }
