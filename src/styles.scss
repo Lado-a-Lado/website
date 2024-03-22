@@ -22,9 +22,9 @@ body {
 }
 
 :root {
-  --theme-yellow: #FFE57D;
-  --theme-red: #BD4747;
-  --theme-brown: #6d2e46;
+  --theme-yellow: oklch(0.922 0.127 95.646);
+  --theme-red: oklch(0.559 0.153 23.425);
+  --theme-brown: oklch(0.396 0.094 358.327);
 }
 
 .color-red {
