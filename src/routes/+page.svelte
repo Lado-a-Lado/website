@@ -16,28 +16,27 @@
         </div>
         <h1 class="fruits-delight text-black my-2 md:my-6 text-[45px] md:text-7xl">Feitos para amar</h1>
         <h2 class="rubik md:text-xl">LAL Talks</h2>
-        <button class="sign-up my-16 text-xl md:text-2xl"> RESERVA GRÁTIS AQUI </button>
+        <button class="sign-up my-16 text-xl md:text-2xl">RESERVA GRÁTIS AQUI</button>
     </div>
 
     <img class="huge-logo absolute top-20 md:top-0 -right-[25%] w-[120%] md:w-full max-w-none max-h-[40%] md:max-h-[80%]"
          src="/img/logo-hands.svg" alt="Desenho de mãos dadas"/>
 </section>
 
-<section id="sobre" class="h-svh min-h-96 md:h-auto md:gap-4 md:py-12 flex flex-col items-center justify-evenly">
+<section id="sobre"
+         class="h-svh max-h-[500px] md:max-h-none min-h-96 md:h-auto md:gap-4 md:py-12 flex flex-col items-center justify-evenly">
     <h1 class="color-red mono">SOBRE</h1>
     <h2 class="fruits-delight text-3xl md:text-4xl xl:text-5xl">Em que consiste?</h2>
-    <div class="flex flex-col md:flex-row items-center gap-16 w-11/12 my-8 md:my-16">
-        <div class="w-full md:w-9/12">
-            <div class="bg-black aspect-video"><span class="text-white w-full h-full items-center flex justify-center">
-                Video</span></div>
-        </div>
-        <div class="w-full md:w-9/12">
-            <p>Lorem ipsum dolor sit amet consectetur. Iaculis amet enim pellentesque mattis consequat adipiscing vel
-                odio. Pretium tortor arcu eu lorem sagittis vitae laoreet. Aliquam tempor nibh tellus mauris rutrum sit
-                suspendisse et cras. Integer interdum posuere id commodo morbi varius sapien mi. Fermentum iaculis non
-                lorem proin scelerisque. Aenean faucibus malesuada sapien netus diam volutpat. </p>
-            <p> Erat massa vestibulum volutpat lectus fringilla senectus nisi. Amet facilisi gravida vitae vitae quam
-                auctor orci non. Commodo sit vestibulum gravida euismod tincidunt proin. </p>
+    <div class="flex flex-col md:flex-row items-center justify-center gap-16 w-11/12 my-8 md:my-16">
+        <!--        <div class="w-full md:w-9/12">-->
+        <!--            <div class="bg-black aspect-video"><span class="text-white w-full h-full items-center flex justify-center">-->
+        <!--                Video</span></div>-->
+        <!--        </div>-->
+        <div class="w-full md:w-[900px]">
+            <p>Um evento que conta com a presença de 8 oradores para abordar os temas do namoro, casamento e
+                família.</p>
+            <p>Organizado pelo Lado a Lado, de jovens para jovens, este evento vai mostrar-te que foste feito para algo
+                grande...</p>
         </div>
     </div>
     <button class="sign-up block md:hidden self-start ml-5">INSCRIÇÃO</button>
@@ -47,10 +46,6 @@
     <img class="w-full scale-110 md:w-1/2 md:mr-44 md:scale-100" src="/img/lado-a-lado-frase.svg"
          alt="E viveram lado a lado para sempre"/>
     <button class="sign-up hidden md:block">INSCRIÇÃO</button>
-</section>
-
-<section id="oradores" class="h-svh">
-    <p>Oradores</p>
 </section>
 
 <style lang="scss">

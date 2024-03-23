@@ -1,8 +1,20 @@
 <script lang="ts">
-  import {writable} from "svelte/store";
-  import {onMount} from "svelte";
+  import {derived, writable} from "svelte/store";
+  import {onDestroy, onMount} from "svelte";
 
   const scrollHeight = writable(0);
+
+  const opacity = derived(scrollHeight, ($scroll) => {
+    //todo
+  });
+
+  const unsubscribe = scrollHeight.subscribe(scroll => {
+    //todo
+    // const headerElem = document.querySelector('header');
+    // if (!headerElem)
+    //   return;
+    // headerElem.style.opacity = String(scroll / 10);
+  });
 
   const updateScrollHeight = () => {
     const maxHeight = document.body.scrollHeight - window.innerHeight;
@@ -10,6 +22,7 @@
   };
 
   onMount(() => updateScrollHeight());
+  onDestroy(unsubscribe);
 </script>
 
 <svelte:window on:scroll={updateScrollHeight}/>
