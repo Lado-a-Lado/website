@@ -10,6 +10,18 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "OverpassMono";
+  src: url("/fonts/OverpassMono.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubiks";
+  src: url("/fonts/Rubik.ttf"), url("/fonts/RubikItalic.ttf");
+  font-display: swap;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -32,11 +44,11 @@ body {
 }
 
 .mono {
-  font-family: "Overpass Mono", monospace;
+  font-family: "OverpassMono", monospace;
 }
 
 .rubik {
-  font-family: "Rubik", sans-serif;
+  font-family: "Rubiks", sans-serif;
 }
 
 .fruits-delight {
