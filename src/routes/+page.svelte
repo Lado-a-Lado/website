@@ -19,12 +19,12 @@
         <button class="sign-up my-16 text-xl md:text-2xl">RESERVA GRÁTIS AQUI</button>
     </div>
 
-    <img class="huge-logo absolute top-20 md:top-0 -right-[25%] w-[120%] md:w-full max-w-none max-h-[40%] md:max-h-[80%]"
+    <img class="huge-logo absolute top-20 md:-top-16 -right-[25%] w-[120%] md:w-full max-w-none max-h-[40%] md:max-h-[80%]"
          src="/img/logo-hands.svg" alt="Desenho de mãos dadas"/>
 </section>
 
-<section id="sobre"
-         class="h-svh max-h-[500px] md:max-h-none min-h-96 md:h-auto md:gap-4 md:py-12 flex flex-col items-center justify-evenly">
+<section class="h-svh max-h-[500px] md:max-h-none min-h-96 md:h-auto md:gap-4 md:py-12 flex flex-col items-center
+ justify-evenly">
     <h1 class="color-red mono">SOBRE</h1>
     <h2 class="fruits-delight text-3xl md:text-4xl xl:text-5xl">Em que consiste?</h2>
     <div class="flex flex-col md:flex-row items-center justify-center gap-16 w-11/12 my-8 md:my-16">
@@ -46,6 +46,130 @@
     <img class="w-full scale-110 md:w-1/2 md:mr-44 md:scale-100" src="/img/lado-a-lado-frase.svg"
          alt="E viveram lado a lado para sempre"/>
     <button class="sign-up hidden md:block">INSCRIÇÃO</button>
+</section>
+
+<section class="h-[1230px] md:gap-4 md:py-12 flex flex-col items-center justify-evenly">
+    <h1 class="color-red mono">Horário</h1>
+    <h2 class="fruits-delight text-center text-3xl md:text-4xl xl:text-5xl">Que programa temos para oferecer?</h2>
+    <div class="horário flex flex-col w-11/12">
+        <div class="color-red mono !items-end">
+            <span class="text-lg font-semibold">SÁBADO, 2 MARÇO</span>
+            <div class="flex flex-col items-end">
+                <span>Lisboa</span>
+                <span>Auditório Católica</span>
+            </div>
+        </div>
+        <hr class="!border-t-2 !border-[var(--theme-red)]"/>
+        <div class="momento">
+            <div>
+                <span>18h00 - 18h30</span>
+                <span>Check-in e Abertura</span>
+                <span>Introdução</span>
+            </div>
+        </div>
+        <hr/>
+        <div class="momento">
+            <div>
+                <span>18h30</span>
+                <span>O mundo em que vivemos</span>
+                <span>Francisco Vilhena da Cunha</span>
+            </div>
+            <div>
+                <div>
+                    <img src="/img/fvc.png" alt="Francisco Vilhena da Cunha" class="fvc"/>
+                </div>
+            </div>
+        </div>
+        <hr/>
+        <div class="momento">
+            <div>
+                <span>18h45</span>
+                <span>Para que fomos feitos?</span>
+                <span>Pe. Bernardo Aranha</span>
+            </div>
+            <div>
+                <div>
+                    <img src="/img/pba.png" alt="Pe. Bernardo Aranha" class="relative top-1 right-1 scale-110"/>
+                </div>
+            </div>
+        </div>
+        <hr/>
+        <div class="momento">
+            <div>
+                <span>19h00</span>
+                <span>A beleza da complementaridade</span>
+                <span>Javier Calderón e Alexandra Chumbo</span>
+            </div>
+            <div class="flex">
+                <div class="over">
+                    <img src="/img/javi.png" alt="Javier Calderón" class="javi"/>
+                </div>
+                <div>
+                    <img src="/img/alex.png" alt="Alexandra Chumbo"/>
+                </div>
+            </div>
+        </div>
+        <hr/>
+        <div class="momento">
+            <div>
+                <span>19h30</span>
+                <span>Coffe break</span>
+            </div>
+        </div>
+        <hr/>
+        <div class="momento">
+            <div>
+                <span>20h00</span>
+                <span>Do encantamento inicial ao amor</span>
+                <span>Rodolfo Nona</span>
+            </div>
+            <div>
+                <div>
+                    <img src="/img/rodolfo.png" alt="Rodolfo Nona" class=""/>
+                </div>
+            </div>
+        </div>
+        <hr/>
+        <div class="momento">
+            <div>
+                <span>20h15</span>
+                <span>Prometo amar-te todos os dias da minha vida</span>
+                <span>Graça e Miguel Varão</span>
+            </div>
+            <div>
+                <div>
+                    <img src="/img/mig.png" alt="Graça e Miguel Varão" class=""/>
+                </div>
+            </div>
+        </div>
+        <hr/>
+        <div class="momento">
+            <div>
+                <span>20h30</span>
+                <span>Fui ao fundo. E agora?</span>
+                <span>Vasco Almeida Ribeiro</span>
+            </div>
+            <div>
+                <div>
+                    <img src="/img/var.png" alt="Vasco Almeida Ribeiro"/>
+                </div>
+            </div>
+        </div>
+        <hr/>
+        <div class="momento">
+            <div>
+                <span>20h45</span>
+                <span>"Ama e faz o que quiseres"</span>
+                <span>Fátima e Henrique Fonseca</span>
+            </div>
+            <div>
+                <div>
+                    <img src="/img/fati.png" alt="Fátima e Henrique Fonseca"/>
+                </div>
+            </div>
+        </div>
+        <hr/>
+    </div>
 </section>
 
 <style lang="scss">
@@ -71,6 +195,65 @@
 
     &:active {
       box-shadow: inset 0 0 20px -5px black;
+    }
+  }
+
+  .horário {
+    & > div {
+      @apply flex items-center justify-between my-2;
+    }
+
+    hr {
+      @apply border-t border-black;
+    }
+
+    .momento {
+      & > *:nth-child(1) {
+        @apply flex flex-col shrink;
+
+        & > span {
+          @apply my-[3px];
+        }
+
+        & > span:nth-child(1) {
+          @apply font-semibold;
+          font-family: OverpassMono, monospace;
+          color: var(--theme-red);
+
+          @media (min-width: 768px) {
+            @apply font-bold text-black;
+          }
+        }
+
+        & > span:nth-child(2) {
+          @apply font-bold;
+        }
+      }
+
+      & > *:nth-child(2) {
+        & > div {
+          @apply overflow-hidden;
+          --dimention: 80px;
+          height: var(--dimention);
+          width: var(--dimention);
+          border-radius: 50%;
+          background-color: var(--theme-red);
+        }
+      }
+    }
+
+    img {
+      object-fit: contain;
+      height: var(--dimention);
+      width: var(--dimention);
+    }
+
+    .over {
+      @apply relative -right-5;
+    }
+
+    .javi {
+      clip-path: inset(0 10px 0 0);
     }
   }
 </style>
