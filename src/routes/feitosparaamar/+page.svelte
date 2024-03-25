@@ -73,7 +73,7 @@
     <h2 class="fruits-delight text-center text-3xl md:text-4xl xl:text-5xl">Que programa temos para oferecer?</h2>
     <div class="horário flex flex-col w-11/12 max-w-[900px]">
         <div class="color-red mono !items-end">
-            <span class="text-lg font-semibold">SÁBADO, 2 MARÇO</span>
+            <span class="text-lg font-semibold">SÁBADO, 6 ABRIL</span>
             <div class="flex flex-col items-end">
                 <span>Lisboa</span>
                 <span>Auditório Católica</span>
