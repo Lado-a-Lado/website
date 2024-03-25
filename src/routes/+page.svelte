@@ -7,7 +7,8 @@
   function updateVw() {
     vw.set(window.innerWidth);
   }
-  onMount(()=>updateVw())
+
+  onMount(() => updateVw());
 </script>
 
 <svelte:window on:resize={updateVw}/>
@@ -30,14 +31,15 @@
         </div>
         <h1 class="fruits-delight text-black my-2 md:my-6 text-[45px] md:text-7xl">Feitos para amar</h1>
         <h2 class="rubik md:text-xl">LAL Talks</h2>
-        <a href=https://tally.so/r/nGzJre type=button target=_blank class="sign-up-button relative top-16 bottom-16 text-xl md:text-2xl">RESERVA GRÁTIS AQUI</a>
+        <a href=https://tally.so/r/nGzJre type=button target=_blank
+           class="sign-up-button relative top-16 bottom-16 text-xl md:text-2xl">RESERVA GRÁTIS AQUI</a>
     </div>
 
     <img class="huge-logo absolute top-20 md:-top-16 -right-[25%] w-[120%] md:w-full max-w-none max-h-[40%] md:max-h-[80%]"
          src="/img/logo-hands.svg" alt="Desenho de mãos dadas"/>
 </section>
 
-<section class="h-svh max-h-[500px] md:max-h-none min-h-96 md:h-auto md:gap-4 md:py-12 flex flex-col items-center
+<section class="h-[600px] md:max-h-none md:h-auto md:gap-4 md:py-12 flex flex-col items-center
  justify-evenly">
     <h1 class="color-red mono">SOBRE</h1>
     <h2 class="fruits-delight text-3xl md:text-4xl xl:text-5xl">Em que consiste?</h2>
@@ -46,11 +48,16 @@
         <!--            <div class="bg-black aspect-video"><span class="text-white w-full h-full items-center flex justify-center">-->
         <!--                Video</span></div>-->
         <!--        </div>-->
-        <div class="w-full md:w-[900px]">
-            <p>Um evento que conta com a presença de 8 oradores para abordar os temas do namoro, casamento e
+        <div class="explanation w-full md:w-[900px]">
+            <p class="my-4">Um evento que conta com a presença de 8 oradores para abordar os temas do namoro, casamento e
                 família.</p>
-            <p>Organizado pelo Lado a Lado, de jovens para jovens, este evento vai mostrar-te que foste feito para algo
+            <p class="my-4">Organizado pelo Lado a Lado, de jovens para jovens, este evento vai mostrar-te que foste feito para algo
                 grande...</p>
+            <p class="my-4">
+                Se fui feito para algo, terá sido para amar?
+                <br/>Serei feliz se prometer amar uma pessoa por toda a vida?
+                <br/>Se não me sentir amado, posso sentir-me realizado?
+            </p>
         </div>
     </div>
     <a href=https://tally.so/r/nGzJre type=button target=_blank class="sign-up-button block md:hidden self-start ml-5">INSCRIÇÃO</a>
@@ -246,7 +253,7 @@
     }
 
     .momento {
-      @apply gap-2;
+      @apply gap-4;
 
       & > *:nth-child(1) {
         @apply shrink grid gap-2 grid-cols-1 md:grid-cols-[80px_1fr] items-baseline;
