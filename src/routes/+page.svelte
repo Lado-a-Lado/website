@@ -1,3 +1,17 @@
+<script>
+  import {writable} from "svelte/store";
+  import {onMount} from "svelte";
+
+  const vw = writable(0);
+
+  function updateVw() {
+    vw.set(window.innerWidth);
+  }
+  onMount(()=>updateVw())
+</script>
+
+<svelte:window on:resize={updateVw}/>
+
 <div class="header-buttons">
     <!--    <div class="mono font-semibold absolute left-1/2 bottom-[10%] -translate-x-1/2 flex gap-14 text-lg">-->
     <!--        <a href="#sobre">Sobre</a>-->
@@ -48,10 +62,10 @@
     <button class="sign-up hidden md:block">INSCRIÇÃO</button>
 </section>
 
-<section class="h-[1230px] md:gap-4 md:py-12 flex flex-col items-center justify-evenly">
+<section class="h-[1280px] md:h-[1090px] md:gap-4 md:py-12 flex flex-col items-center justify-evenly">
     <h1 class="color-red mono">Horário</h1>
     <h2 class="fruits-delight text-center text-3xl md:text-4xl xl:text-5xl">Que programa temos para oferecer?</h2>
-    <div class="horário flex flex-col w-11/12">
+    <div class="horário flex flex-col w-11/12 max-w-[900px]">
         <div class="color-red mono !items-end">
             <span class="text-lg font-semibold">SÁBADO, 2 MARÇO</span>
             <div class="flex flex-col items-end">
@@ -62,8 +76,11 @@
         <hr class="!border-t-2 !border-[var(--theme-red)]"/>
         <div class="momento">
             <div>
-                <span>18h00 - 18h30</span>
+                <span>18h30</span>
                 <span>Check-in e Abertura</span>
+                {#if ($vw >= 768)}
+                    <div></div>
+                {/if}
                 <span>Introdução</span>
             </div>
         </div>
@@ -72,6 +89,9 @@
             <div>
                 <span>18h30</span>
                 <span>O mundo em que vivemos</span>
+                {#if ($vw >= 768)}
+                    <div></div>
+                {/if}
                 <span>Francisco Vilhena da Cunha</span>
             </div>
             <div>
@@ -85,6 +105,9 @@
             <div>
                 <span>18h45</span>
                 <span>Para que fomos feitos?</span>
+                {#if ($vw >= 768)}
+                    <div></div>
+                {/if}
                 <span>Pe. Bernardo Aranha</span>
             </div>
             <div>
@@ -98,6 +121,9 @@
             <div>
                 <span>19h00</span>
                 <span>A beleza da complementaridade</span>
+                {#if ($vw >= 768)}
+                    <div></div>
+                {/if}
                 <span>Javier Calderón e Alexandra Chumbo</span>
             </div>
             <div class="flex">
@@ -110,17 +136,21 @@
             </div>
         </div>
         <hr/>
-        <div class="momento">
+        <div class="momento !my-4">
             <div>
                 <span>19h30</span>
                 <span>Coffee break</span>
             </div>
+            <span class="text-3xl">☕️</span>
         </div>
         <hr/>
         <div class="momento">
             <div>
                 <span>20h00</span>
                 <span>Do encantamento inicial ao amor</span>
+                {#if ($vw >= 768)}
+                    <div></div>
+                {/if}
                 <span>Rodolfo Nona</span>
             </div>
             <div>
@@ -134,11 +164,15 @@
             <div>
                 <span>20h15</span>
                 <span>Prometo amar-te todos os dias da minha vida</span>
+                {#if ($vw >= 768)}
+                    <div></div>
+                {/if}
                 <span>Graça e Miguel Varão</span>
             </div>
             <div>
                 <div class="graca-miguel">
-                    <img  class="relative left-1/2 -translate-x-1/2 scale-125" src="/img/mig.png" alt="Graça e Miguel Varão"/>
+                    <img class="relative left-1/2 -translate-x-1/2 scale-125" src="/img/mig.png"
+                         alt="Graça e Miguel Varão"/>
                 </div>
             </div>
         </div>
@@ -147,6 +181,9 @@
             <div>
                 <span>20h30</span>
                 <span>Fui ao fundo. E agora?</span>
+                {#if ($vw >= 768)}
+                    <div></div>
+                {/if}
                 <span>Vasco Almeida Ribeiro</span>
             </div>
             <div>
@@ -160,11 +197,15 @@
             <div>
                 <span>20h45</span>
                 <span>"Ama e faz o que quiseres"</span>
+                {#if ($vw >= 768)}
+                    <div></div>
+                {/if}
                 <span>Fátima e Henrique Fonseca</span>
             </div>
             <div>
                 <div>
-                    <img class="relative scale-[1.4] bottom-4 right-1" src="/img/fati.png" alt="Fátima e Henrique Fonseca"/>
+                    <img class="relative scale-[1.4] bottom-4 right-1" src="/img/fati.png"
+                         alt="Fátima e Henrique Fonseca"/>
                 </div>
             </div>
         </div>
@@ -209,11 +250,12 @@
 
     .momento {
       @apply gap-2;
+
       & > *:nth-child(1) {
-        @apply flex flex-col shrink;
+        @apply shrink grid gap-2 grid-cols-1 md:grid-cols-[80px_1fr];
 
         & > span {
-          @apply my-[3px];
+          @apply my-[3px] md:my-0;
         }
 
         & > span:nth-child(1) {
@@ -257,7 +299,7 @@
       clip-path: inset(0 10px 0 0);
     }
 
-    .graca-miguel{
+    .graca-miguel {
       width: calc(var(--dimention) + 30px) !important;
     }
   }
