@@ -30,9 +30,8 @@
             <span class="text-sm md:text-2xl">&bullet; 6 ABRIL 2024, LISBOA</span>
         </div>
         <h1 class="fruits-delight text-black my-2 md:my-6 text-[45px] md:text-7xl">Feitos para amar</h1>
-        <h2 class="rubik md:text-xl">LAL Talks</h2>
         <a href=https://tally.so/r/nGzJre type=button target=_blank
-           class="sign-up-button relative top-16 bottom-16 text-xl md:text-2xl">RESERVA GRÁTIS AQUI</a>
+           class="sign-up-button relative top-20 bottom-16 text-xl md:text-2xl">INCRIÇÃO GRÁTIS</a>
     </div>
 
     <img class="huge-logo absolute top-20 md:-top-16 -right-[25%] w-[120%] md:w-full max-w-none max-h-[40%] md:max-h-[80%]"
@@ -60,13 +59,13 @@
             </p>
         </div>
     </div>
-    <a href=https://tally.so/r/nGzJre type=button target=_blank class="sign-up-button block md:hidden self-start ml-5">INSCRIÇÃO</a>
+    <a href=https://tally.so/r/nGzJre type=button target=_blank class="sign-up-button block md:hidden self-start ml-5">INSCRIÇÃO GRÁTIS</a>
 </section>
 
 <section class="bg-[var(--theme-yellow)] flex justify-center items-center p-12">
     <img class="w-full scale-110 md:w-1/2 md:mr-44 md:scale-100" src="/img/lado-a-lado-frase.svg"
          alt="E viveram lado a lado para sempre"/>
-    <a href=https://tally.so/r/nGzJre type=button class="sign-up-button hidden md:block">INSCRIÇÃO</a>
+    <a href=https://tally.so/r/nGzJre type=button class="sign-up-button hidden md:block">INSCRIÇÃO GRÁTIS</a>
 </section>
 
 <section class="h-[1400px] md:h-[1090px] md:gap-4 md:py-12 flex flex-col items-center gap-4 py-10">
@@ -83,7 +82,7 @@
         <hr class="!border-t-2 !border-[var(--theme-red)]"/>
         <div class="momento">
             <div>
-                <span>18h30</span>
+                <span>18h00</span>
                 <span>Check-in e Abertura</span>
                 {#if ($vw >= 768)}
                     <div></div>
@@ -94,7 +93,7 @@
         <hr/>
         <div class="momento">
             <div>
-                <span>18h30</span>
+                <span></span>
                 <span>O mundo em que vivemos</span>
                 {#if ($vw >= 768)}
                     <div></div>
@@ -110,7 +109,7 @@
         <hr/>
         <div class="momento">
             <div>
-                <span>18h45</span>
+                <span></span>
                 <span>Para que fui feito?</span>
                 {#if ($vw >= 768)}
                     <div></div>
@@ -126,7 +125,7 @@
         <hr/>
         <div class="momento">
             <div>
-                <span>19h00</span>
+                <span></span>
                 <span>A beleza da complementaridade</span>
                 {#if ($vw >= 768)}
                     <div></div>
@@ -145,15 +144,15 @@
         <hr/>
         <div class="momento !my-4">
             <div>
-                <span>19h30</span>
-                <span>Coffee break</span>
+                <span></span>
+                <span>Coffee break (30 min)</span>
             </div>
             <span class="text-3xl">☕️</span>
         </div>
         <hr/>
         <div class="momento">
             <div>
-                <span>20h00</span>
+                <span></span>
                 <span>Do encantamento inicial ao amor</span>
                 {#if ($vw >= 768)}
                     <div></div>
@@ -169,7 +168,7 @@
         <hr/>
         <div class="momento">
             <div>
-                <span>20h15</span>
+                <span></span>
                 <span>Amar-te todos os dias da minha vida</span>
                 {#if ($vw >= 768)}
                     <div></div>
@@ -186,7 +185,7 @@
         <hr/>
         <div class="momento">
             <div>
-                <span>20h30</span>
+                <span></span>
                 <span>Fui ao fundo. E agora?</span>
                 {#if ($vw >= 768)}
                     <div></div>
@@ -202,7 +201,7 @@
         <hr/>
         <div class="momento">
             <div>
-                <span>20h45</span>
+                <span></span>
                 <span>"Ama e faz o que quiseres"</span>
                 {#if ($vw >= 768)}
                     <div></div>
