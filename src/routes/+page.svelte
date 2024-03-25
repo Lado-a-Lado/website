@@ -76,7 +76,7 @@
             </div>
             <div>
                 <div>
-                    <img src="/img/fvc.png" alt="Francisco Vilhena da Cunha" class="fvc"/>
+                    <img src="/img/fvc.png" alt="Francisco Vilhena da Cunha"/>
                 </div>
             </div>
         </div>
@@ -125,7 +125,7 @@
             </div>
             <div>
                 <div>
-                    <img src="/img/rodolfo.png" alt="Rodolfo Nona" class=""/>
+                    <img class="relative right-3 top-1 scale-110" src="/img/rodolfo.png" alt="Rodolfo Nona"/>
                 </div>
             </div>
         </div>
@@ -137,8 +137,8 @@
                 <span>Graça e Miguel Varão</span>
             </div>
             <div>
-                <div>
-                    <img src="/img/mig.png" alt="Graça e Miguel Varão" class=""/>
+                <div class="graca-miguel">
+                    <img  class="relative left-1/2 -translate-x-1/2 scale-125" src="/img/mig.png" alt="Graça e Miguel Varão"/>
                 </div>
             </div>
         </div>
@@ -151,7 +151,7 @@
             </div>
             <div>
                 <div>
-                    <img src="/img/var.png" alt="Vasco Almeida Ribeiro"/>
+                    <img class="relative right-2" src="/img/var.png" alt="Vasco Almeida Ribeiro"/>
                 </div>
             </div>
         </div>
@@ -164,7 +164,7 @@
             </div>
             <div>
                 <div>
-                    <img src="/img/fati.png" alt="Fátima e Henrique Fonseca"/>
+                    <img class="relative scale-[1.4] bottom-4 right-1" src="/img/fati.png" alt="Fátima e Henrique Fonseca"/>
                 </div>
             </div>
         </div>
@@ -208,6 +208,7 @@
     }
 
     .momento {
+      @apply gap-2;
       & > *:nth-child(1) {
         @apply flex flex-col shrink;
 
@@ -236,7 +237,7 @@
           --dimention: 80px;
           height: var(--dimention);
           width: var(--dimention);
-          border-radius: 50%;
+          border-radius: 99999px;
           background-color: var(--theme-red);
         }
       }
@@ -254,6 +255,10 @@
 
     .javi {
       clip-path: inset(0 10px 0 0);
+    }
+
+    .graca-miguel{
+      width: calc(var(--dimention) + 30px) !important;
     }
   }
 </style>
