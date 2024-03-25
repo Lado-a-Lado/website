@@ -38,8 +38,7 @@
          src="/img/logo-hands.svg" alt="Desenho de mãos dadas"/>
 </section>
 
-<section class="h-[600px] md:max-h-none md:h-auto md:gap-4 md:py-12 flex flex-col items-center
- justify-evenly">
+<section class="h-[800px] md:max-h-none md:h-auto md:gap-4 md:py-12 flex flex-col items-center justify-evenly">
     <h1 class="color-red mono">SOBRE</h1>
     <h2 class="fruits-delight text-3xl md:text-4xl xl:text-5xl">Em que consiste?</h2>
     <div class="flex flex-col md:flex-row items-center justify-center gap-16 w-11/12 my-8 md:my-16">
@@ -47,19 +46,23 @@
         <!--            <div class="bg-black aspect-video"><span class="text-white w-full h-full items-center flex justify-center">-->
         <!--                Video</span></div>-->
         <!--        </div>-->
-        <div class="explanation w-full md:w-[900px]">
-            <p class="my-4">Um evento que conta com a presença de 8 oradores para abordar os temas do namoro, casamento e
-                família.</p>
-            <p class="my-4">Organizado pelo Lado a Lado, de jovens para jovens, este evento vai mostrar-te que foste feito para algo
-                grande...</p>
-            <p class="my-4">
-                Se fui feito para algo, terá sido para amar?
-                <br/>Serei feliz se prometer amar uma pessoa por toda a vida?
-                <br/>Se não me sentir amado, posso sentir-me realizado?
-            </p>
+        <div class="explanation w-full md:w-[700px]">
+            <p class="my-4">Todos sabemos quanto um voluntariado, uma Missão País nos enche.
+                <br/> Todos já sentimos borboletas na barriga por alguém.
+                <br/> Por que é tão bom amar alguém?</p>
+
+            <p class="my-4"> O que é que estas três frases têm em comum?
+                <br/> Porque nos alteram tanto?</p>
+
+            <p class="my-4"> Nesta conferência queremos percorrer um caminho que vai desde a raiz destas questões até à
+                forma como é possível viver uma vida mais cheia de sentido.
+                <br/> Vais ficar de fora?
+                <br/> Ou queres descobrir para que fomos feitos?</p>
+            <p>Vemo-nos dia 6?</p>
         </div>
     </div>
-    <a href=https://tally.so/r/nGzJre type=button target=_blank class="sign-up-button block md:hidden self-start ml-5">INSCRIÇÃO GRÁTIS</a>
+    <a href=https://tally.so/r/nGzJre type=button target=_blank class="sign-up-button block md:hidden self-start ml-5">INSCRIÇÃO
+        GRÁTIS</a>
 </section>
 
 <section class="bg-[var(--theme-yellow)] flex justify-center items-center p-12">
