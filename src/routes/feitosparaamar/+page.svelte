@@ -79,7 +79,7 @@
             <span class="text-lg font-semibold">SÁBADO, 6 ABRIL</span>
             <div class="flex flex-col items-end">
                 <span>Lisboa</span>
-                <span class="text-right">Auditório Católica</span>
+                <span class="text-right">Universidade Católica</span>
             </div>
         </div>
         <hr class="!border-t-2 !border-[var(--theme-red)]"/>
