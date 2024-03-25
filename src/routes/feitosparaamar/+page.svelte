@@ -1,4 +1,5 @@
 <script>
+  import Instapost from "./insta-post.svelte";
   import {writable} from "svelte/store";
   import {onMount} from "svelte";
 
@@ -31,21 +32,18 @@
         </div>
         <h1 class="fruits-delight text-black my-2 md:my-6 text-[45px] md:text-7xl">Feitos para amar</h1>
         <a href=https://tally.so/r/nGzJre type=button target=_blank
-           class="sign-up-button relative top-20 bottom-16 text-xl md:text-2xl">INSCRIÇÃO GRÁTIS</a>
+           class="sign-up-button relative top-20 bottom-16 text-xl md:text-2xl">INSCRIÇÃO GRATUITA</a>
     </div>
 
     <img class="huge-logo absolute top-20 md:-top-16 -right-[25%] w-[120%] md:w-full max-w-none max-h-[40%] md:max-h-[80%]"
          src="/img/logo-hands.svg" alt="Desenho de mãos dadas"/>
 </section>
 
-<section class="h-[700px] md:max-h-none md:h-auto md:gap-4 md:py-12 flex flex-col items-center justify-evenly">
+<section class="h-[1000px] md:max-h-none md:h-auto md:gap-4 md:py-12 flex flex-col items-center justify-evenly">
     <h1 class="color-red mono">SOBRE</h1>
     <h2 class="fruits-delight text-3xl md:text-4xl xl:text-5xl">Em que consiste?</h2>
     <div class="flex flex-col md:flex-row items-center justify-center gap-16 w-11/12 my-8 md:my-16">
-        <!--        <div class="w-full md:w-9/12">-->
-        <!--            <div class="bg-black aspect-video"><span class="text-white w-full h-full items-center flex justify-center">-->
-        <!--                Video</span></div>-->
-        <!--        </div>-->
+        <Instapost/>
         <div class="explanation w-full md:w-[700px]">
             <p class="my-4">
                 <br/>Todos já sentimos borboletas na barriga.
@@ -73,7 +71,7 @@
 <section class="bg-[var(--theme-yellow)] flex justify-center items-center p-12">
     <img class="w-full scale-110 md:w-1/2 md:mr-44 md:scale-100" src="/img/lado-a-lado-frase.svg"
          alt="E viveram lado a lado para sempre"/>
-    <a href=https://tally.so/r/nGzJre type=button class="sign-up-button hidden md:block">INSCRIÇÃO GRÁTIS</a>
+    <a href=https://tally.so/r/nGzJre type=button class="sign-up-button hidden md:block">INSCRIÇÃO GRATUITA</a>
 </section>
 
 <section class="h-[1400px] md:h-[1090px] md:gap-4 md:py-12 flex flex-col items-center gap-4 py-10">
@@ -81,7 +79,7 @@
     <h2 class="fruits-delight text-center text-3xl md:text-4xl xl:text-5xl">Que programa temos para oferecer?</h2>
     <div class="horário flex flex-col w-11/12 max-w-[900px]">
         <div class="color-red mono !items-end">
-            <span class="text-lg font-semibold w-2/3">SÁBADO, 6 ABRIL</span>
+            <span class="text-lg font-semibold w-[70%]">SÁBADO, 6 ABRIL</span>
             <div class="flex flex-col items-end">
                 <span>Lisboa</span>
                 <span class="text-right">Universidade Católica</span>
@@ -101,7 +99,7 @@
         <hr/>
         <div class="momento">
             <div>
-                <span></span>
+                <span>18h30</span>
                 <span>O mundo em que vivemos</span>
                 {#if ($vw >= 768)}
                     <div></div>
@@ -227,6 +225,20 @@
     </div>
 </section>
 
+<section class="flex flex-row end-subscribe h-[140px] md:h-[200px]">
+    <div class="translate-x-[65%]">
+        <img alt="maos-em-concha" src="/img/maos-em-concha.svg"/>
+    </div>
+    <div class="flex flex-col items-center mr-1 w-9/12 md:pt-6 md:pb-3">
+        <h1 class="color-red mono text-center py-3 font-bold">INSCRIÇÃO</h1>
+        <h2 class="fruits-delight text-center text-xl md:text-2xl xl:text-3xl pb-5 md:pb-8">Feitos para amar</h2>
+        <div>
+            <a href=https://tally.so/r/nGzJre type=button target=_blank
+               class="sign-up-button !px-[16px] !py-[6px] text-xs !border-2 md:!py-3 md:!px-5 md:!border-3 md:!text-l">INSCRIÇÃO GRATUITA</a>
+        </div>
+    </div>
+</section>
+
 <style lang="scss">
   #landing-section {
     background-image: url("/img/Gradient.jpg");
@@ -309,5 +321,9 @@
     .javi {
       clip-path: inset(0 10px 0 0);
     }
+  }
+
+  .end-subscribe {
+    background-color: var(--theme-yellow);
   }
 </style>
