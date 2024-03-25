@@ -21,7 +21,7 @@
     <!--    </div>-->
 </div>
 
-<section id=landing-section class="relative overflow-hidden h-svh max-h-[950px] sm:min-h-[900px] sm:max-h-[1000px] md:max-h-[1080px] min-h-[750px]
+<section id=landing-section class="relative overflow-hidden h-svh max-h-[950px] sm:min-h-[600px] sm:max-h-[1000px] md:max-h-[1080px] min-h-[750px]
  flex flex-col justify-center gap-4 bg-cover">
     <div class="absolute top-[55%] sm:top-2/3 md:top-[60%] md:-translate-y-1/2 left-1/2 -translate-x-1/2 md:left-1/3 w-80 md:w-[600px]">
         <div class="color-red mono flex gap-2 items-center font-bold">
@@ -30,7 +30,7 @@
         </div>
         <h1 class="fruits-delight text-black my-2 md:my-6 text-[45px] md:text-7xl">Feitos para amar</h1>
         <h2 class="rubik md:text-xl">LAL Talks</h2>
-        <button class="sign-up my-16 text-xl md:text-2xl">RESERVA GRÁTIS AQUI</button>
+        <a href=https://tally.so/r/nGzJre type=button target=_blank class="sign-up-button relative top-16 bottom-16 text-xl md:text-2xl">RESERVA GRÁTIS AQUI</a>
     </div>
 
     <img class="huge-logo absolute top-20 md:-top-16 -right-[25%] w-[120%] md:w-full max-w-none max-h-[40%] md:max-h-[80%]"
@@ -53,16 +53,16 @@
                 grande...</p>
         </div>
     </div>
-    <button class="sign-up block md:hidden self-start ml-5">INSCRIÇÃO</button>
+    <a href=https://tally.so/r/nGzJre type=button target=_blank class="sign-up-button block md:hidden self-start ml-5">INSCRIÇÃO</a>
 </section>
 
 <section class="bg-[var(--theme-yellow)] flex justify-center items-center p-12">
     <img class="w-full scale-110 md:w-1/2 md:mr-44 md:scale-100" src="/img/lado-a-lado-frase.svg"
          alt="E viveram lado a lado para sempre"/>
-    <button class="sign-up hidden md:block">INSCRIÇÃO</button>
+    <a href=https://tally.so/r/nGzJre type=button class="sign-up-button hidden md:block">INSCRIÇÃO</a>
 </section>
 
-<section class="h-[1280px] md:h-[1090px] md:gap-4 md:py-12 flex flex-col items-center justify-evenly">
+<section class="h-[1400px] md:h-[1090px] md:gap-4 md:py-12 flex flex-col items-center gap-4 py-10">
     <h1 class="color-red mono">Horário</h1>
     <h2 class="fruits-delight text-center text-3xl md:text-4xl xl:text-5xl">Que programa temos para oferecer?</h2>
     <div class="horário flex flex-col w-11/12 max-w-[900px]">
@@ -104,7 +104,7 @@
         <div class="momento">
             <div>
                 <span>18h45</span>
-                <span>Para que fomos feitos?</span>
+                <span>Para que fui feito?</span>
                 {#if ($vw >= 768)}
                     <div></div>
                 {/if}
@@ -163,7 +163,7 @@
         <div class="momento">
             <div>
                 <span>20h15</span>
-                <span>Prometo amar-te todos os dias da minha vida</span>
+                <span>Amar-te todos os dias da minha vida</span>
                 {#if ($vw >= 768)}
                     <div></div>
                 {/if}
@@ -217,12 +217,9 @@
   #landing-section {
     background-image: url("/img/Gradient.jpg");
     background-color: var(--theme-yellow);
-
-    img.huge-logo {
-    }
   }
 
-  button.sign-up {
+  .sign-up-button {
     @apply bg-none font-semibold py-3 px-6 rounded-full;
     transition: all cubic-bezier(0.4, 0, 0.2, 1) 125ms;
     color: var(--theme-red);
@@ -252,7 +249,7 @@
       @apply gap-2;
 
       & > *:nth-child(1) {
-        @apply shrink grid gap-2 grid-cols-1 md:grid-cols-[80px_1fr];
+        @apply shrink grid gap-2 grid-cols-1 md:grid-cols-[80px_1fr] items-baseline;
 
         & > span {
           @apply my-[3px] md:my-0;
