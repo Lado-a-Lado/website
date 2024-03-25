@@ -31,7 +31,7 @@
         </div>
         <h1 class="fruits-delight text-black my-2 md:my-6 text-[45px] md:text-7xl">Feitos para amar</h1>
         <a href=https://tally.so/r/nGzJre type=button target=_blank
-           class="sign-up-button relative top-20 bottom-16 text-xl md:text-2xl">INCRIÇÃO GRÁTIS</a>
+           class="sign-up-button relative top-20 bottom-16 text-xl md:text-2xl">INSCRIÇÃO GRÁTIS</a>
     </div>
 
     <img class="huge-logo absolute top-20 md:-top-16 -right-[25%] w-[120%] md:w-full max-w-none max-h-[40%] md:max-h-[80%]"
@@ -76,7 +76,7 @@
             <span class="text-lg font-semibold">SÁBADO, 6 ABRIL</span>
             <div class="flex flex-col items-end">
                 <span>Lisboa</span>
-                <span>Auditório Católica</span>
+                <span class="text-right">Auditório Católica</span>
             </div>
         </div>
         <hr class="!border-t-2 !border-[var(--theme-red)]"/>
@@ -176,8 +176,8 @@
                 <span>Graça e Miguel Varão</span>
             </div>
             <div>
-                <div class="graca-miguel">
-                    <img class="relative left-1/2 -translate-x-1/2 scale-125" src="/img/mig.png"
+                <div>
+                    <img class="relative left-1/2 -translate-x-1/2 scale-110 top-1" src="/img/mig.png"
                          alt="Graça e Miguel Varão"/>
                 </div>
             </div>
@@ -300,10 +300,6 @@
 
     .javi {
       clip-path: inset(0 10px 0 0);
-    }
-
-    .graca-miguel {
-      width: calc(var(--dimention) + 30px) !important;
     }
   }
 </style>
