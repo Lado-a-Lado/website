@@ -1,4 +1,8 @@
-<div>
+<script lang="ts">
+  export let classes = "";
+</script>
+
+<div class={classes}>
     <blockquote class="instagram-media"
                 data-instgrm-permalink="https://www.instagram.com/reel/C4d_7psrjiS/?utm_source=ig_embed&amp;utm_campaign=loading"
                 data-instgrm-version="14"

@@ -1,17 +1,25 @@
 <script>
   import InstaPost from "./InstaPost.svelte";
   import SignUpButton from "./SignUpButton.svelte";
+  import {vw} from "$lib";
 </script>
 
 <section class="py-12 flex flex-col gap-4 items-center">
-    <h1 class="color-red mono">SOBRE</h1>
-    <h2 class="fruits-delight text-3xl md:text-4xl xl:text-5xl">Em que consiste?</h2>
-    <div class="flex flex-col md:flex-row items-center justify-center gap-4 w-11/12 my-8 md:my-16">
-        <div>
-            <InstaPost/>
+    {#if ($vw < 768)}
+        <h1 class="color-red mono">SOBRE</h1>
+        <h2 class="fruits-delight text-3xl md:text-4xl xl:text-5xl">Em que consiste?</h2>
+    {/if}
+    <div class="flex md:grid md:grid-cols-2 flex-col md:flex-row items-center justify-center gap-4 md:gap-8 w-11/12 my-8">
+        <div class="md:flex md:justify-center">
+            <InstaPost classes="md:w-[400px]"/>
         </div>
 
-        <div class="explanation w-full md:w-[700px]">
+        <div class="explanation md:w-full md:flex md:flex-col md:gap-4">
+            {#if ($vw >= 768)}
+                <h1 class="color-red mono">SOBRE</h1>
+                <h2 class="fruits-delight text-3xl md:text-4xl xl:text-5xl">Em que consiste?</h2>
+            {/if}
+
             <p>
                 <br/>Todos já sentimos borboletas na barriga.
                 <br/>Todos sabemos quanto um voluntariado nos enche.
