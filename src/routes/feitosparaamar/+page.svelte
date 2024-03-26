@@ -1,5 +1,5 @@
 <script>
-  import Instapost from "./insta-post.svelte";
+  import InstaPost from "./InstaPost.svelte";
   import {writable} from "svelte/store";
   import {onMount} from "svelte";
 
@@ -43,7 +43,8 @@
     <h1 class="color-red mono">SOBRE</h1>
     <h2 class="fruits-delight text-3xl md:text-4xl xl:text-5xl">Em que consiste?</h2>
     <div class="flex flex-col md:flex-row items-center justify-center gap-16 w-11/12 my-8 md:my-16">
-        <Instapost/>
+        <InstaPost/>
+
         <div class="explanation w-full md:w-[700px]">
             <p class="my-4">
                 <br/>Todos já sentimos borboletas na barriga.
