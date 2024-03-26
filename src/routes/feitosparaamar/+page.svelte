@@ -26,8 +26,8 @@
 
 <Section3Horario/>
 
-<section class="flex flex-row end-subscribe h-[140px] md:h-[200px]">
-    <div class="translate-x-[65%]">
+<section class="flex flex-row bg-[var(--theme-yellow)] h-[140px] md:h-[200px]">
+    <div class="md:translate-x-[65%]">
         <img alt="maos-em-concha" src="/img/maos-em-concha.svg"/>
     </div>
     <div class="flex flex-col items-center mr-1 w-9/12 md:pt-6 md:pb-3">
@@ -38,10 +38,3 @@
         </div>
     </div>
 </section>
-
-<style lang="scss">
-
-  .end-subscribe {
-    background-color: var(--theme-yellow);
-  }
-</style>
