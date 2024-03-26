@@ -18,8 +18,8 @@
 
 <Section2About/>
 
-<section class="bg-[var(--theme-yellow)] flex justify-center items-center p-12">
-    <img class="w-full scale-110 md:w-1/2 md:mr-44 md:scale-100" src="/img/lado-a-lado-frase.svg"
+<section class="bg-[var(--theme-yellow)] flex justify-center items-center px-4 py-12">
+    <img class="w-full md:w-1/2 md:mr-44" src="/img/lado-a-lado-frase.svg"
          alt="E viveram lado a lado para sempre"/>
     <SignUpButton classes="hidden md:block"/>
 </section>

@@ -2,7 +2,7 @@
   import {vw} from "$lib";
 </script>
 
-<section class="h-[1400px] md:h-[1090px] md:gap-4 md:py-12 flex flex-col items-center gap-4 py-10">
+<section class="md:gap-4 md:py-12 flex flex-col items-center gap-4 py-10">
     <h1 class="color-red mono">Horário</h1>
     <h2 class="fruits-delight text-center text-3xl md:text-4xl xl:text-5xl">Que programa temos para oferecer?</h2>
     <div class="horário flex flex-col w-11/12 max-w-[900px]">
