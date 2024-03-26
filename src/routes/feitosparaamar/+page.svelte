@@ -2,6 +2,7 @@
   import InstaPost from "./InstaPost.svelte";
   import {writable} from "svelte/store";
   import {onMount} from "svelte";
+  import SignUpButton from "./SignUpButton.svelte";
 
   const vw = writable(0);
 
@@ -31,8 +32,7 @@
             <span class="text-sm md:text-2xl">&bullet; 6 ABRIL 2024, LISBOA</span>
         </div>
         <h1 class="fruits-delight text-black my-2 md:my-6 text-[45px] md:text-7xl">Feitos para amar</h1>
-        <a href=https://tally.so/r/nGzJre type=button target=_blank
-           class="sign-up-button relative top-20 bottom-16 text-xl md:text-2xl">INSCRIÇÃO GRATUITA</a>
+        <SignUpButton classes="relative top-20 bottom-16 text-xl md:text-2xl"/>
     </div>
 
     <img class="huge-logo absolute top-20 md:-top-16 -right-[25%] w-[120%] md:w-full max-w-none max-h-[40%] md:max-h-[80%]"
@@ -65,14 +65,13 @@
             <p class="my-4">Inscreve-te!</p>
         </div>
     </div>
-    <a href=https://tally.so/r/nGzJre type=button target=_blank class="sign-up-button block md:hidden self-start ml-5">INSCRIÇÃO
-        GRÁTIS</a>
+    <SignUpButton classes="block md:hidden self-start ml-5"/>
 </section>
 
 <section class="bg-[var(--theme-yellow)] flex justify-center items-center p-12">
     <img class="w-full scale-110 md:w-1/2 md:mr-44 md:scale-100" src="/img/lado-a-lado-frase.svg"
          alt="E viveram lado a lado para sempre"/>
-    <a href=https://tally.so/r/nGzJre type=button class="sign-up-button hidden md:block">INSCRIÇÃO GRATUITA</a>
+    <SignUpButton classes="hidden md:block"/>
 </section>
 
 <section class="h-[1400px] md:h-[1090px] md:gap-4 md:py-12 flex flex-col items-center gap-4 py-10">
@@ -234,8 +233,7 @@
         <h1 class="color-red mono text-center py-3 font-bold">INSCRIÇÃO</h1>
         <h2 class="fruits-delight text-center text-xl md:text-2xl xl:text-3xl pb-5 md:pb-8">Feitos para amar</h2>
         <div>
-            <a href=https://tally.so/r/nGzJre type=button target=_blank
-               class="sign-up-button !px-[16px] !py-[6px] text-xs !border-2 md:!py-3 md:!px-5 md:!border-3 md:!text-l">INSCRIÇÃO GRATUITA</a>
+            <SignUpButton classes="!px-[16px] !py-[6px] text-xs !border-2 md:!py-3 md:!px-5 md:!border-3 md:!text-l"/>
         </div>
     </div>
 </section>
@@ -244,23 +242,6 @@
   #landing-section {
     background-image: url("/img/Gradient.jpg");
     background-color: var(--theme-yellow);
-  }
-
-  .sign-up-button {
-    @apply bg-none font-semibold py-3 px-6 rounded-full;
-    transition: all cubic-bezier(0.4, 0, 0.2, 1) 125ms;
-    color: var(--theme-red);
-    border: 3px solid var(--theme-red);
-    font-family: "Overpass Mono", monospace;
-
-    &:hover {
-      color: var(--theme-yellow);
-      background-color: var(--theme-red);
-    }
-
-    &:active {
-      box-shadow: inset 0 0 20px -5px black;
-    }
   }
 
   .horário {
