@@ -1,8 +1,9 @@
 <script lang="ts">
   export let classes: string;
+  export let text = "INSCRIÇÃO GRATUITA";
 </script>
 
-<a href=https://tally.so/r/nGzJre type=button target=_blank class={classes}>INSCRIÇÃO GRATUITA</a>
+<a href=https://tally.so/r/nGzJre type=button target=_blank class={classes}>{text}</a>
 
 <style>
     a {

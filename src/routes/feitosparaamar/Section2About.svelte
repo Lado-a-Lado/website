@@ -32,11 +32,11 @@
             <p>
                 <br/>Nesta conferência queremos percorrer um caminho que vai desde a raiz destas questões até à forma
                 como é possível viver uma vida mais cheia de sentido.
+            </p>
+            <p>
                 <br/> Vais ficar de fora?
                 <br/> Ou queres descobrir para que fomos feitos?
             </p>
-
-            <p>Inscreve-te!</p>
         </div>
     </div>
     <SignUpButton classes="block md:hidden self-start ml-5"/>

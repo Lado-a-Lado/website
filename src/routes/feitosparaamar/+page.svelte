@@ -34,7 +34,7 @@
         <h1 class="color-red mono text-center py-3 font-bold">INSCRIÇÃO</h1>
         <h2 class="fruits-delight text-center text-xl md:text-2xl xl:text-3xl pb-5 md:pb-8">Feitos para amar</h2>
         <div>
-            <SignUpButton classes="!px-[16px] !py-[6px] text-xs !border-2 md:!py-3 md:!px-5 md:!border-3 md:!text-l"/>
+            <SignUpButton text="INSCREVE-TE" classes="!px-[16px] !py-[6px] text-xs !border-2 md:!py-3 md:!px-5 md:!border-3 md:!text-l"/>
         </div>
     </div>
 </section>

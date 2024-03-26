@@ -7,7 +7,7 @@
     <div class="absolute top-[55%] sm:top-2/3 md:top-[60%] md:-translate-y-1/2 left-1/2 -translate-x-1/2 md:left-1/3 w-80 md:w-[600px]">
         <div class="color-red mono flex gap-2 items-center font-bold">
             <span class="text-lg md:text-3xl">CONFERÊNCIA</span>
-            <span class="text-sm md:text-2xl">&bullet; 6 ABRIL 2024, LISBOA</span>
+            <span class="text-sm md:text-2xl text-nowrap">&bullet; 6 ABRIL 2024, LISBOA</span>
         </div>
         <h1 class="fruits-delight text-black my-2 md:my-6 text-[45px] md:text-7xl">Feitos para amar</h1>
         <SignUpButton classes="relative top-20 bottom-16 text-xl md:text-2xl"/>

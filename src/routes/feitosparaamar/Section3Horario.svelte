@@ -21,7 +21,7 @@
                 {#if ($vw >= 768)}
                     <div></div>
                 {/if}
-                <span>Introdução</span>
+                <span></span>
             </div>
         </div>
         <hr/>
