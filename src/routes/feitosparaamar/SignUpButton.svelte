@@ -1,5 +1,5 @@
 <script lang="ts">
-    export let classes:string;
+  export let classes: string;
 </script>
 
 <a href=https://tally.so/r/nGzJre type=button target=_blank class={classes}>INSCRIÇÃO GRATUITA</a>
