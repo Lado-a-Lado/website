@@ -1,18 +1,6 @@
 <script>
-  import {writable} from "svelte/store";
-  import {onMount} from "svelte";
-
-  const vw = writable(0);
-
-  function updateVw() {
-    vw.set(window.innerWidth);
-  }
-
-  onMount(() => updateVw());
+  import {vw} from "$lib";
 </script>
-
-<svelte:window on:resize={updateVw}/>
-
 
 <section class="h-[1400px] md:h-[1090px] md:gap-4 md:py-12 flex flex-col items-center gap-4 py-10">
     <h1 class="color-red mono">Horário</h1>
