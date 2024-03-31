@@ -5,7 +5,7 @@
 
 <a href=https://tally.so/r/nGzJre type=button target=_blank class={classes}>{text}</a>
 
-<style>
+<style lang="scss">
     a {
         @apply bg-none font-semibold py-3 px-6 rounded-full;
         transition: all cubic-bezier(0.4, 0, 0.2, 1) 125ms;
