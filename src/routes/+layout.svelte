@@ -4,7 +4,11 @@
   import "../styles.scss";
   import {onMount} from "svelte";
   import {updateVw} from "$lib";
+  import { inject } from '@vercel/analytics'
+  import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit';
 
+  injectSpeedInsights();
+  inject();
   onMount(() => updateVw());
 </script>
 
