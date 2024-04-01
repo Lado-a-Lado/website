@@ -7,7 +7,7 @@ export default {
   plugins: [
     sveltekit(),
     partytownVite({
-      dest: join(__dirname, 'dist', '~partytown'),
+      dest: join(process.cwd(), 'static', '~partytown'),
     }),
   ],
 };
