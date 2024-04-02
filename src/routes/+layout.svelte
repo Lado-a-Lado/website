@@ -19,13 +19,6 @@
 
 <!--	{@html '<script>' + partytownSnippet() + '</script>'}-->
 
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-RR3N6CW5T9"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		window.gtag = function(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-		gtag('config', 'G-RR3N6CW5T9');
-	</script>
 </svelte:head>
 
 <svelte:window on:resize={updateVw}/>
