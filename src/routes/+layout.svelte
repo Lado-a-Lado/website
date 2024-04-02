@@ -19,7 +19,7 @@
 
 	{@html '<script>' + partytownSnippet() + '</script>'}
 
-	<script type="text/partytown" src="https://www.googletagmanager.com/gtag/js?id=G-RR3N6CW5T9"></script>
+	<script type="text/partytown" async src="https://www.googletagmanager.com/gtag/js?id=G-RR3N6CW5T9"></script>
 	<script type="text/partytown">
 		window.dataLayer = window.dataLayer || [];
 		window.gtag = function(){dataLayer.push(arguments);}
