@@ -10,15 +10,14 @@
 </script>
 
 <svelte:head>
-<!--	<script>-->
-<!--		// Forward the necessary functions to the web worker layer-->
-<!--		partytown = {-->
-<!--			forward: ['dataLayer.push', 'gtag']-->
-<!--		};-->
-<!--	</script>-->
+	<script>
+		// Forward the necessary functions to the web worker layer
+		partytown = {
+			forward: ['dataLayer.push', 'gtag']
+		};
+	</script>
 
-<!--	{@html '<script>' + partytownSnippet() + '</script>'}-->
-
+	{@html '<script>' + partytownSnippet() + '</script>'}
 </svelte:head>
 
 <svelte:window on:resize={updateVw}/>
