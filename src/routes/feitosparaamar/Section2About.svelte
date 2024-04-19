@@ -1,6 +1,5 @@
 <script>
   import InstaPost from "./InstaPost.svelte";
-  import SignUpButton from "./SignUpButton.svelte";
   import {vw} from "$lib";
 </script>
 
@@ -39,5 +38,4 @@
             </p>
         </div>
     </div>
-    <SignUpButton classes="block md:hidden self-start ml-5"/>
 </section>
