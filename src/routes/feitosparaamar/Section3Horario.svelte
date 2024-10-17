@@ -17,17 +17,20 @@
         <div class="momento">
             <div>
                 <span>18h00</span>
-                <span>Check-in e Abertura</span>
-                {#if ($vw >= 768)}
-                    <div></div>
-                {/if}
-                <span>Introdução</span>
+                <span>Check-in</span>
             </div>
         </div>
         <hr/>
         <div class="momento">
             <div>
                 <span>18h30</span>
+                <span>Abertura</span>
+            </div>
+        </div>
+        <hr/>
+        <div class="momento">
+            <div>
+                <span></span>
                 <span>O mundo em que vivemos</span>
                 {#if ($vw >= 768)}
                     <div></div>
