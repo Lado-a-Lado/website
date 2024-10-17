@@ -1,5 +1,4 @@
 <script>
-  import {onMount} from "svelte";
-
-  onMount(() => window.location.href = "/feitosparaamar");
 </script>
+
+<div class="h-96 flex items-center">Hello</div>
