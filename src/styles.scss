@@ -27,14 +27,17 @@ html {
 body {
   scrollbar-width: thin;
   scrollbar-color: var(--theme-red);
-  background-color: hsl(51, 76%, 95%);
+  background-color: var(--theme-white);
   overflow-x: hidden;
 }
 
 :root {
+  --theme-white: hsl(51, 76%, 95%);
   --theme-yellow: hsl(48, 100%, 75%);
+  --theme-toast: hsl(46, 100%, 46%);
   --theme-red: hsl(0, 47%, 51%);
   --theme-brown: hsl(337, 41%, 30%);
+  --theme-black: hsl(0, 0%, 0%);
 }
 
 .color-red {

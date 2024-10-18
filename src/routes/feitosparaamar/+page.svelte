@@ -30,7 +30,7 @@
 <svelte:window on:scroll={updateScrollHeight}/>
 
 <header class="fixed z-10 w-lvw flex" style="background-color: rgba(255,229,125,{$scrollHeight/30})">
-    <a class="logo block m-7 w-36" href="/"><img class="w-full" src="/img/logo-name.svg" alt="Lado a Lado"/></a>
+    <a class="logo block m-7 w-36" href="/"><img class="w-full" src="/img/logo-name-black.svg" alt="Lado a Lado"/></a>
 </header>
 
 <div class="header-buttons">
@@ -55,7 +55,7 @@
 
 <section class="flex flex-row bg-[var(--theme-yellow)] h-[140px] md:h-[200px]">
     <div class="md:translate-x-[65%]">
-        <img alt="maos-em-concha" src="/img/maos-em-concha.svg"/>
+        <img alt="maos-em-concha" src="/img/drawings/maos-em-concha.svg"/>
     </div>
     <div class="flex flex-col items-center mr-1 w-9/12 md:pt-6 md:pb-3">
         <h1 class="color-red mono text-center py-3 font-bold">INSCRIÇÃO</h1>
